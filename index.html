@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer type="text/javascript" src="scripts.js"></script>
+    <link rel="stylesheet" href="styles.css">    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400&display=swap">
+    <title>Calculator</title>
+</head>
+<body>
+
+    <div class = calculator>
+        <div class = text-window>0</div>
+        <div class =buttons>
+             <div class = number-container>
+                <button class = "clear" onclick = "clearOut()">CLR</button>
+                <button class = "number color" onclick = "changeColor()">?</button>
+                <button class = "number" onclick = "numPress(7)">7</button>
+                <button class = "number" onclick = "numPress(8)">8</button>
+                <button class = "number" onclick = "numPress(9)">9</button>
+                <button class = "number" onclick = "numPress(4)">4</button>
+                <button class = "number" onclick = "numPress(5)">5</button>
+                <button class = "number" onclick = "numPress(6)">6</button>
+                <button class = "number" onclick = "numPress(1)">1</button>
+                <button class = "number" onclick = "numPress(2)">2</button>
+                <button class = "number" onclick = "numPress(3)">3</button>
+                <button class = "number zero" onclick = "numPress(0)">0</button>
+                <button class = "number" onclick = "decPress()">.</button>
+              </div>
+             <div class = "operator-container">
+                <button class = "operator" onclick = "opPress('divide')">&divide;</button>
+                <button class = "operator" onclick = "opPress('times')">&times;</button>
+                <button class = "operator" onclick = "opPress('minus')">&minus;</button>
+                <button class = "operator" onclick = "opPress('plus')">&plus;</button>
+                <button class = "operator" onclick = "equals()">=</button>
+             </div>
+         </div>
+
+    </div>
+    
+</body>
+</html>
